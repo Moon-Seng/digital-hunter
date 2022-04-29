@@ -33,7 +33,7 @@ hr{
 }
 
 .hidden{
-    display: none;
+    display: none !important;
 }
 
 /* Base Header */
@@ -45,6 +45,7 @@ hr{
 
 .base-content{
     display: flex;
+    justify-content: space-between;
 }
 
 .base-header-content{
@@ -122,6 +123,12 @@ hr{
     margin: 1rem;
     font-weight: bold;
     font-size: 20px;
+    transition: 400ms;
+}
+
+.nav-item:hover{
+    color: #f80834;
+    cursor: pointer;
 }
 
 .number h2{
@@ -227,7 +234,7 @@ hr{
 /* About */
 
 #about{
-    height: 90vh;
+    height: 100vh;
 }
 
 .about-card{
@@ -288,6 +295,7 @@ hr{
 .bottom-card button{
     background-color: #262833;
     border: none;
+    font-weight: bold;
 }
 
 /* Course */
@@ -308,6 +316,10 @@ hr{
     margin: 2rem 4.5rem;
     background-color: rgb(141, 160, 154);
     border-radius: 4px;
+}
+
+.course-card:hover{
+    cursor: pointer;
 }
 
 .course-card:hover .course-overview{
@@ -346,6 +358,7 @@ hr{
 
 .cta-course{
     background-color: #f80834;
+    margin-bottom: 8rem;
 }
 
 .cta-course-size{
@@ -360,11 +373,16 @@ hr{
 .cta-course-size h2{
     font-size: 60px;
     font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.cta-course-button{
+    display: flex;
 }
 
 .normal-button{
     color: #f80834;
-    margin: 0 3rem;
+    margin: 0 3rem 0 0;
 }
 
 .arrow-button{
@@ -373,4 +391,741 @@ hr{
 
 .arrow-button i{
     margin-left: 1rem;
+}
+
+/* Review */
+
+#review{
+    height: 100vh;
+}
+
+.review{
+    margin-bottom: 8rem;
+}
+
+.review-top-section{
+    height: 40vh;
+}
+
+.review-bottom-section{
+    margin-top: 4rem;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.review-card{
+    margin: 2rem;
+    padding: 2rem;
+    background-color: #181920;
+}
+
+.reviewer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+.reviewer-content h2{
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.reviewer-content hr{
+    margin-bottom: .8rem;
+}
+
+.reviewer-content h3{
+    font-size: 20px;
+    opacity: .5;
+    font-weight: bold;
+}
+
+.reviewer-img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.reviewer-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.reviewer-text{
+    padding-right: 4rem;
+}
+
+.reviewer-text p{
+    font-size: 20px;
+    line-height: 2rem;
+}
+
+/* SLick Dots Ui Start*/
+
+.slick-dots{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.slick-dots li{
+    margin: 0 1rem;
+}
+
+.slick-dots li.slick-active button .slick-hr{
+    background-color: #f80834;
+}
+
+.slick-dots li button{
+    background-color: transparent;
+    border: none;
+    margin-top: 2rem;
+}
+
+.slick-hr{
+    opacity: 1;
+    width: 50px;
+    height: 4px !important;
+    background-color: #2A2E38;
+}
+
+/* Slick Dots Ui end */
+
+.review button{
+    background-color: #f80834;
+    color: white;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.review button i{
+    margin-left: 1rem;
+}
+
+/* Register */
+
+#register{
+    height: 100vh;
+}
+
+.register-content h2{
+    font-weight: bold;
+}
+
+.register-content p{
+    font-size: 24px;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+.register-content button{
+    background-color: #f80834;
+}
+
+.register-content button i {
+    margin-left: 1rem;
+}
+
+/* Contact */
+
+#contact{
+ height: 100vh;   
+}
+
+.contact{
+    margin-bottom: 4rem;
+}
+
+.contact-card{
+    margin-top: 4rem;
+    display: flex;
+    width: 90%;
+}
+
+.mail{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #f80834;
+}
+
+.mail img{
+    margin-bottom: 2rem;
+}
+
+.field{
+    padding: 2rem;
+    background-color: #181920;
+}
+
+.field h1{
+    font-weight: bold;
+}
+
+.name-field{
+    display: flex;
+}
+
+.first-name-input{
+    margin-right: 1rem;
+}
+.form-control{
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    color: white;
+    background: #34303C;
+    border: none;
+}
+
+.form-control:focus{
+    color: white;
+    box-shadow: none;
+    background: #34303C;
+    border: none;
+}
+
+.field button{
+    background-color: #f80834;
+}
+
+.field button img{
+    width: 22px;
+}
+
+/* Footer */
+
+#footer{
+    margin-top: 4rem;
+    margin-bottom: 8rem;
+}
+
+.footer{
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+
+.footer-logo{
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo img{
+    width: 100px;
+    height: auto;
+}
+
+.footer-logo h2{
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.social{
+    display: flex;
+}
+
+.social i {
+    margin: 2rem;
+    font-size: 2rem;
+    color: #A0A0A0;
+}
+
+.social i:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.social img{
+    width: 36px;
+    margin: 2rem;
+}
+
+.social img:hover{
+    cursor: pointer;
+}
+
+.footer-info ul{
+    list-style-type: none;
+}
+
+.footer-info .list-head{
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.footer-info ul li{
+    font-size: 20px;
+    margin-bottom: 1rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.footer-info ul li:hover{
+    color: white;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 1460px) {
+
+    /* Base */
+
+    .base-header h2{
+        font-size: 40px;
+    }
+
+    .left-base-content p{
+        font-size: 18px;
+        width: 45%;
+    }
+
+    .base-button{
+        font-size: 18px;
+        padding: 1rem 3rem;
+
+    }
+
+    /* Header */
+    .header-content h1{
+        font-size: 70px;
+    }
+
+    .header-content h2{
+        font-size: 40px;
+    }
+
+    .header-content hr{
+        width: 150px;
+    }
+
+    .header-content p{
+        font-size: 24px;
+    }
+
+    /* ABout */
+
+    .about-card{
+        width: 95%;
+    }
+
+    .top-card i{
+        font-size: 3.5rem;
+    }
+
+    .top-card p{
+        font-size: 20px;
+    }
+
+    /* Course */
+
+    .course-card{
+        width:90%;
+    }
+
+    .cta-course-size h2{
+        font-size: 50px;
+    }
+
+    /* Review */
+
+    .review-bottom-section {
+        margin-top: 2rem;
+    }
+
+    .review-card{
+        margin: 1rem;
+    }
+
+    .reviewer-content h2{
+        font-size: 30px;
+    }
+
+    .reviewer-img{
+        width: 80px;
+        height: 80px;
+    }
+
+    .reviewer-text p{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width : 1140px) {
+
+    /* Base */
+    .base-button{
+        padding: 1rem 3rem;
+    }
+
+    .left-base-content p{
+        width: 90%;
+    }
+
+    .base-header h2{
+        font-size: 40px;
+    }
+
+    /* NavBar */
+    .main-nav{
+        padding-top: 2rem;
+    }
+
+    .logo img{
+        width: 65px;
+        height: auto;
+    }
+
+    .logo h2{
+        font-size: 20px;
+    }
+
+    .info{
+        justify-content: center;
+        margin-right: 2rem;
+    }
+
+    .nav-item{
+        font-size: 18px;
+    }
+
+    /* Header */
+
+    #header{
+        height: 120vh;
+    }
+
+    .header-content{
+        flex-wrap: wrap;
+        height: 100vh;
+    }
+
+    .header-content h1{
+        font-size: 60px;
+    }
+
+    .header-content h2{
+        font-size: 32px;
+    }
+
+    .header-content hr{
+        width: 150px;
+    }
+
+    .header-content p {
+        font-size: 20px;
+    }
+
+    /* About */
+
+    #about{
+        height: 220vh;
+    }
+
+    .about-card{
+        flex-wrap: wrap;
+    }
+
+    .full-card{
+        margin-bottom: 4rem;
+    }
+
+    /* Course */
+    #course{
+        height: 180vh;
+    }
+
+    .course-cards{
+        width: 100%;
+    }
+
+    .course-card{
+        margin-left: 1rem;
+    }
+
+    .course-top-section{
+        height: 140vh;
+    }
+
+    .cta-course-size{
+        width: 80%;
+    }
+
+    .cta-course-size h2{
+        font-size: 50px;
+    }
+
+    /* Review */
+
+    .slick-dots{
+        padding: 0;
+    }
+
+    /* Register */
+
+    .register-content p{
+        width: 80%;
+    }
+
+    /* Contact */
+    .contact-card{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mail{
+        padding: 4rem;
+    }
+
+    /* Footer */
+    .footer{
+        flex-wrap: wrap;
+    }
+
+    .social {
+        margin-bottom: 4rem;
+    }
+
+    .footer-info ul{
+        margin-bottom: 4rem;
+    }
+}
+
+
+
+@media screen and (max-width: 540px) {
+
+    /* Base */
+
+    .base-header h2{
+        font-size: 30px;
+    }
+
+    .red-square{
+        width: 30px;
+        height: 30px;
+    }
+
+    .left-base-content p {
+        font-size: 13px;
+        width: 95%;
+    }
+
+    .short-hr {
+        width: 50px;
+    }
+
+    .base-button{
+        padding: .7rem 1.5rem;
+        font-size: 16px;
+    }
+
+    /* NavBar */
+    .main-nav{
+        padding-top: 1rem;
+        align-items: center;
+    }
+
+    .openbtn{
+        padding: 1rem;
+    }
+
+    .openbtn i{
+        font-size: 2rem;
+    }
+
+    .info{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav-items{
+        background-color: #262833;
+        flex-direction: column;
+        position: absolute;
+        top: 6rem;
+        width: 90%;
+        left: 7%;
+        align-items: center;
+        z-index: 200;
+        border-radius: 10px;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .nav-item{
+        width: 90%;
+    }
+
+    /* Header */
+
+    .header-content h1{
+        font-size: 40px;
+    }
+
+    .header-content h2{
+        font-size: 20px;
+    }
+
+    .header-content hr{
+        width: 100px;
+    }
+
+    .header-content p{
+        font-size: 16px;
+    }
+
+    /* About */
+
+    #about{
+        height: 300vh;
+    }
+
+    .top-card{
+        padding: 1rem;
+    }
+
+    .top-card i{
+        font-size: 3rem;
+    }
+
+    .top-card h3{
+        font-size: 26px;
+    }
+
+    .top-card p{
+        font-size: 16px;
+    }
+
+    /* Course */
+
+    #course{
+        height: 230vh;
+    }
+
+    .course-card{
+        margin: 1rem;
+    }
+
+    .course-detail{
+        padding: 1rem;
+    }
+
+    .course-detail p{
+        font-size: 16px;
+    }
+
+    .course-top-section{
+        height: 180vh;
+    }
+
+    .cta-course-size h2{
+        font-size: 30px;
+    }
+
+    /* Review */
+
+    .review-card {
+        margin: 0;
+        padding: 1.5rem;
+    }
+
+    .reviewer-content h2{
+        font-size: 20px;
+    }
+
+    .reviewer-content h3{
+        font-size: 16px;
+    }
+
+    .reviewer-img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .reviewer-text {
+        padding-right: 1rem;
+    }
+
+    .reviewer {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .reviewer-text p {
+        font-size: 12px;
+        line-height: 1.5rem;
+    }
+
+    .slick-hr{
+        width: 20px;
+    }
+
+    .review button{
+        margin-top: 2rem;
+    }
+
+    /* Register */
+
+    #register{
+        height: 120vh;
+    }
+
+    .register-content p{
+        font-size: 16px;
+        width: 90%;
+    }
+
+    /* Contact */
+
+    .contact-card{
+        width: 100%;
+        justify-content: start;
+    }
+
+    .mail h2{
+        font-size: 16px;
+    }
+
+    .form-control{
+        font-size: 14px;
+    }
+
+    .name-field{
+        flex-direction: column;
+    }
+
+    /* Footer */
+
+    .social i{
+        font-size: 1.5rem;
+        margin: 1rem;
+    }
+
+    .social img{
+        margin: 1rem;
+        width: 27px;
+        height: 24px;
+    }
+
+
+
+
+
+
+
+
+
+
 }

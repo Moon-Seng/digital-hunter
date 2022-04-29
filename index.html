@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <title>Digital Hunter Challenge</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
 
@@ -18,8 +20,8 @@
                 <h2>Digital <br>Hunter</h2>
             </div>
 
-            <div class="info">
-                <div class="nav-items">
+            <div class="info ">
+                <div class="nav-items ">
                     <p class="nav-item">Home</p>
                     <p class="nav-item">About</p>
                     <p class="nav-item">Content</p>
@@ -27,31 +29,35 @@
                     <p class="nav-item">Course</p>
                 </div>
 
-                <div class="number">
+                <div class="number d-none d-lg-block">
                     <h2>+95 9 753 479 007</h2>
                     <span>Always Open</span>
                 </div>
             </div>
 
-            <div class="page-number">
+            <div class="page-number d-none d-lg-block">
                 <h3>01</h3>
                 <hr>
                 <h4>06</h4>
+            </div>
+
+            <div class="openbtn d-block d-md-none" id="openBtn">
+                <i class="fa-solid fa-bars"></i>
             </div>
         </div>
     </nav>
 
     <hr class="nav-line">
 
-    <header>
+    <header id="header">
         <div class="header">
-            <div class="text-rotate">
+            <div class="text-rotate d-none d-lg-flex">
                 <hr>
                 <h2>Digital Hunter</h2>
             </div>
 
             <div class="header-content">
-                <div class="content-text col-12 col-md-8 col-lg-6">
+                <div class="content-text order-1 order-lg-0 col-12 col-lg-6 wow animate__animated animate__fadeInLeft">
                     <h1>Digital Hunter</h1>
                     <h2>Front-end Web Development</h2>
                     <hr>
@@ -63,7 +69,7 @@
                     <button class="base-button">Join Now</button>
                 </div>
 
-                <div class="content-img col-12 col-md-8 col-lg-6">
+                <div class="content-img order-0 order-lg-1 col-12 col-lg-6 wow animate__animated animate__fadeInRight">
                     <img src="/Image/Artboard 2.svg" alt="">
                 </div>
             </div>
@@ -77,7 +83,7 @@
                 <div class="left-base-content">
                     <div class="base-header">
                         <div class="red-square"></div>
-                        <h2>Digital Hunter</h2>
+                        <h2>About</h2>
                     </div>
                     <p>Lorem Ipsum is simply dummy text of the printing and
                         typesetting industry. Lorem Ipsum has been the industry's
@@ -86,7 +92,7 @@
                     <hr class="short-hr">
                 </div>
 
-                <div class="page-number">
+                <div class="page-number d-none d-lg-block">
                     <h3>02</h3>
                     <hr>
                     <h4>06</h4>
@@ -95,7 +101,7 @@
             </div>
 
             <div class="about-card">
-                <div class="col-12 col-lg-4 full-card">
+                <div class="col-12 col-lg-4 full-card wow animate__animated animate__fadeInRight animate__delay-1s">
                     <div class="top-card">
                         <i class="fa-solid fa-display"></i>
                         <h3>Digital Hunter</h3>
@@ -113,7 +119,7 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-lg-4 full-card">
+                <div class="col-12 col-lg-4 full-card wow animate__animated animate__fadeInRight animate__delay-2s">
                     <div class="top-card">
                         <i class="fa-solid fa-display"></i>
                         <h3>Digital Hunter</h3>
@@ -130,7 +136,7 @@
                         <i class="fa-solid fa-angle-right"></i>
                     </div>
                 </div>
-                <div class="col-12 col-lg-4 full-card">
+                <div class="col-12 col-lg-4 full-card wow animate__animated animate__fadeInRight animate__delay-3s">
                     <div class="top-card">
                         <i class="fa-solid fa-display"></i>
                         <h3>Digital Hunter</h3>
@@ -159,7 +165,7 @@
                     <div class="left-base-content">
                         <div class="base-header">
                             <div class="red-square"></div>
-                            <h2>Digital Hunter</h2>
+                            <h2>Course</h2>
                         </div>
                         <p>Lorem Ipsum is simply dummy text of the printing and
                             typesetting industry. Lorem Ipsum has been the industry's
@@ -168,7 +174,7 @@
                         <hr class="short-hr">
                     </div>
     
-                    <div class="page-number">
+                    <div class="page-number d-none d-lg-block">
                         <h3>03</h3>
                         <hr>
                         <h4>06</h4>
@@ -177,8 +183,8 @@
                 </div>
     
                 <div class="course-cards">
-                    <div class="col-6 col-md-4">
-                        <div class="course-card">
+                    <div class="col-6 col-lg-4 ">
+                        <div class="course-card wow animate__animated animate__fadeIn animate__delay-1s">
                             <div class="course-detail">
                                 <p>Lorem Ipsum is simply
                                     dummy text of the printing 
@@ -194,8 +200,8 @@
                         </div>
                     </div>
     
-                    <div class="col-6 col-md-4">
-                        <div class="course-card">
+                    <div class="col-6 col-lg-4">
+                        <div class="course-card wow animate__animated animate__fadeIn animate__delay-1s">
                             <div class="course-detail">
                                 <p>Lorem Ipsum is simply
                                     dummy text of the printing 
@@ -211,8 +217,8 @@
                         </div>
                     </div>
     
-                    <div class="col-6 col-md-4">
-                        <div class="course-card">
+                    <div class="col-6 col-lg-4">
+                        <div class="course-card wow animate__animated animate__fadeIn animate__delay-1s">
                             <div class="course-detail">
                                 <p>Lorem Ipsum is simply
                                     dummy text of the printing 
@@ -228,8 +234,8 @@
                         </div>
                     </div>
     
-                    <div class="col-6 col-md-4">
-                        <div class="course-card">
+                    <div class="col-6 col-lg-4">
+                        <div class="course-card wow animate__animated animate__fadeIn animate__delay-2s">
                             <div class="course-detail">
                                 <p>Lorem Ipsum is simply
                                     dummy text of the printing 
@@ -245,8 +251,8 @@
                         </div>
                     </div>
     
-                    <div class="col-6 col-md-4">
-                        <div class="course-card">
+                    <div class="col-6 col-lg-4">
+                        <div class="course-card wow animate__animated animate__fadeIn animate__delay-2s">
                             <div class="course-detail">
                                 <p>Lorem Ipsum is simply
                                     dummy text of the printing 
@@ -262,8 +268,8 @@
                         </div>
                     </div>
     
-                    <div class="col-6 col-md-4">
-                        <div class="course-card">
+                    <div class="col-6 col-lg-4">
+                        <div class="course-card wow animate__animated animate__fadeIn animate__delay-2s">
                             <div class="course-detail">
                                 <p>Lorem Ipsum is simply
                                     dummy text of the printing 
@@ -286,17 +292,382 @@
             <div class="cta-course-size">
                 <h2>Front-end Web Development</h2>
                 <div class="cta-course-button">
-                    <button class="base-button normal-button">Join Now</button>
-                    <button class="base-button normal-button">Join Now</button>
+                    <button class="base-button normal-button d-none d-lg-block">Join Now</button>
+                    <button class="base-button normal-button d-none d-lg-block">Join Now</button>
                     <button class="base-button arrow-button">Join Now <i class="fa-solid fa-angle-right"></i></button>
                 </div>
             </div>
         </div>
     </section>
 
-    <div class="vh-100"></div>
+    <section id="review">
+        <div class="review-top-section">
+            <div class="review base-content-size">
+                <div class="base-content">
+    
+                    <div class="left-base-content">
+                        <div class="base-header">
+                            <div class="red-square"></div>
+                            <h2>Review</h2>
+                        </div>
+                        <p>Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the industry's
+                            standard dummy text ever since the 1500s, when an unknown
+                        </p>
+                        <hr class="short-hr">
+                    </div>
+    
+                    <div class="page-number d-none d-lg-block">
+                        <h3>04</h3>
+                        <hr>
+                        <h4>06</h4>
+                    </div>
+    
+                </div>
 
-    <script src="script.js"></script>
+                <div class="review-bottom-section">
+                    <div class="review-card col-12 col-md-5">
+                        <div class="reviewer">
+                            <div class="reviewer-content">
+                                <h2>Emily R.</h2>
+                                <hr class="short-hr">
+                                <h3>Marketing Director</h3>
+                            </div>
+        
+                            <div class="reviewer-img">
+                                <img src="/Image/image-emily.jpg" alt="">
+                            </div>
+                        </div>
+        
+                        <div class="reviewer-text">
+                            <p>Lorem Ipsum is simply dummy text of the printing and
+        
+                                typesetting industry. Lorem Ipsum has been the industry's
+                                
+                                standard dummy text ever since the 1500s, when an 
+                                
+                                unknown printer took a galley of type and scrambled it to 
+                                
+                                make a type specimen book. It has survived not only five 
+                                
+                                centuries, but also the leapinto electronic typesetting, 
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="review-card col-12 col-md-5">
+                        <div class="reviewer">
+                            <div class="reviewer-content">
+                                <h2>Thomas S.</h2>
+                                <hr class="short-hr">
+                                <h3>Chief Operating Officer</h3>
+                            </div>
+        
+                            <div class="reviewer-img">
+                                <img src="/Image/image-thomas.jpg" alt="">
+                            </div>
+                        </div>
+        
+                        <div class="reviewer-text">
+                            <p>Lorem Ipsum is simply dummy text of the printing and
+        
+                                typesetting industry. Lorem Ipsum has been the industry's
+                                
+                                standard dummy text ever since the 1500s, when an 
+                                
+                                unknown printer took a galley of type and scrambled it to 
+                                
+                                make a type specimen book. It has survived not only five 
+                                
+                                centuries, but also the leapinto electronic typesetting, 
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="review-card col-12 col-md-5">
+                        <div class="reviewer">
+                            <div class="reviewer-content">
+                                <h2>Jennie F.</h2>
+                                <hr class="short-hr">
+                                <h3>Business Owner</h3>
+                            </div>
+        
+                            <div class="reviewer-img">
+                                <img src="/Image/image-jennie.jpg" alt="">
+                            </div>
+                        </div>
+        
+                        <div class="reviewer-text">
+                            <p>Lorem Ipsum is simply dummy text of the printing and
+        
+                                typesetting industry. Lorem Ipsum has been the industry's
+                                
+                                standard dummy text ever since the 1500s, when an 
+                                
+                                unknown printer took a galley of type and scrambled it to 
+                                
+                                make a type specimen book. It has survived not only five 
+                                
+                                centuries, but also the leapinto electronic typesetting, 
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="review-card col-12 col-md-5">
+                        <div class="reviewer">
+                            <div class="reviewer-content">
+                                <h2>Satish Patel</h2>
+                                <hr class="short-hr">
+                                <h3>Founder & CEO, Huddle</h3>
+                            </div>
+        
+                            <div class="reviewer-img">
+                                <img src="/Image/profile-1.jpg" alt="">
+                            </div>
+                        </div>
+        
+                        <div class="reviewer-text">
+                            <p>Lorem Ipsum is simply dummy text of the printing and
+        
+                                typesetting industry. Lorem Ipsum has been the industry's
+                                
+                                standard dummy text ever since the 1500s, when an 
+                                
+                                unknown printer took a galley of type and scrambled it to 
+                                
+                                make a type specimen book. It has survived not only five 
+                                
+                                centuries, but also the leapinto electronic typesetting, 
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="review-card col-12 col-md-5">
+                        <div class="reviewer">
+                            <div class="reviewer-content">
+                                <h2>Bruce McKenzie</h2>
+                                <hr class="short-hr">
+                                <h3>Co-founder of Huddle</h3>
+                            </div>
+        
+                            <div class="reviewer-img">
+                                <img src="/Image/profile-2.jpg" alt="">
+                            </div>
+                        </div>
+        
+                        <div class="reviewer-text">
+                            <p>Lorem Ipsum is simply dummy text of the printing and
+        
+                                typesetting industry. Lorem Ipsum has been the industry's
+                                
+                                standard dummy text ever since the 1500s, when an 
+                                
+                                unknown printer took a galley of type and scrambled it to 
+                                
+                                make a type specimen book. It has survived not only five 
+                                
+                                centuries, but also the leapinto electronic typesetting, 
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="review-card col-12 col-md-5">
+                        <div class="reviewer">
+                            <div class="reviewer-content">
+                                <h2>Iva Boyd</h2>
+                                <hr class="short-hr">
+                                <h3>Marketing Manager</h3>
+                            </div>
+        
+                            <div class="reviewer-img">
+                                <img src="/Image/profile-3.jpg" alt="">
+                            </div>
+                        </div>
+        
+                        <div class="reviewer-text">
+                            <p>Lorem Ipsum is simply dummy text of the printing and
+        
+                                typesetting industry. Lorem Ipsum has been the industry's
+                                
+                                standard dummy text ever since the 1500s, when an 
+                                
+                                unknown printer took a galley of type and scrambled it to 
+                                
+                                make a type specimen book. It has survived not only five 
+                                
+                                centuries, but also the leapinto electronic typesetting, 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-cta-button">
+                    <button class="base-button">Join Now <i class="fa-solid fa-angle-right"></i></button>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section id="register">
+        <div class="register base-content-size">
+            <div class="base-content">
+    
+                <div class="left-base-content">
+                    <div class="base-header">
+                        <div class="red-square"></div>
+                        <h2>Register Account</h2>
+                    </div>
+                    <p>Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the industry's
+                        standard dummy text ever since the 1500s, when an unknown
+                    </p>
+                    <hr class="short-hr">
+                </div>
+
+                <div class="page-number d-none d-lg-block">
+                    <h3>05</h3>
+                    <hr>
+                    <h4>06</h4>
+                </div>
+
+            </div>
+
+            <div class="register-content col-12 col-lg-5">
+                <h2>Digital Hunter</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                </p>
+                <div class="register-cta-button">
+                    <button class="base-button">Join Now <i class="fa-solid fa-angle-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="contact base-content-size">
+            <div class="base-content">
+    
+                <div class="left-base-content">
+                    <div class="base-header">
+                        <div class="red-square"></div>
+                        <h2>Contact</h2>
+                    </div>
+                    <p>Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the industry's
+                        standard dummy text ever since the 1500s, when an unknown
+                    </p>
+                    <hr class="short-hr">
+                </div>
+
+                <div class="page-number d-none d-lg-block">
+                    <h3>06</h3>
+                    <hr>
+                    <h4>06</h4>
+                </div>
+
+            </div>
+
+
+            <div class="contact-card">
+                <div class="mail col-11 col-lg-5">
+                    <img src="/Image/Vector.svg" alt="">
+                    <h2>digitalhunter.info@gmail.com</h2>
+                </div>
+    
+                <div class="field col-11 col-lg-7">
+                    <h1>Contact Us</h1>
+    
+                    <div class="name-field">
+                        <input class="form-control first-name-input" type="text" name="" id="" placeholder="First Name">
+                        <input class="form-control name-input" type="text" name="" id="" placeholder="Last Name">
+                    </div>
+    
+                    <input class="form-control eamil-input" type="email" name="" id="" placeholder="Email"> 
+    
+                    <textarea class="form-control" cols="5" rows="8" placeholder="Message" ></textarea>
+                    
+                    <button class="base-button">Send <img src="/Image/Vector.svg" alt=""></button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    
+    <footer id="footer">
+        <div class="footer">
+            <div class="col-12 col-lg-5">
+                <div class="footer-logo">
+                    <img src="/Image/Artboard 2.svg" alt="">
+                    <h2>Digital Hunter</h2>
+                </div>
+
+                <div class="social">
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-github"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <img id="needActive" src="/Image/Vector-gray.png" alt="">
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-7">
+                <div class="row">
+                    <div class="footer-info col-12 col-md-6 col-lg-3">
+                        <ul>
+                            <li class="list-head">Product</li>
+                            <li>Database</li>
+                            <li>Auth</li>
+                            <li>Storage</li>
+                            <li>Functions</li>
+                            <li>Pricing</li>
+                            <li>Beta</li>
+                        </ul>
+                    </div>
+                    <div class="footer-info col-12 col-md-6 col-lg-3">
+                        <ul>
+                            <li class="list-head">Resources</li>
+                            <li>Database</li>
+                            <li>Auth</li>
+                            <li>Storage</li>
+                            <li>Functions</li>
+                            <li>Pricing</li>
+                            <li>Beta</li>
+                            <li>Privacy Policy</li>
+                        </ul>
+                    </div>
+                    <div class="footer-info col-12 col-md-6 col-lg-3">
+                        <ul>
+                            <li class="list-head">Developers</li>
+                            <li>Documentation</li>
+                            <li>API Reference</li>
+                            <li>Guides</li>
+                        </ul>
+                    </div>
+                    <div class="footer-info col-12 col-md-6 col-lg-3">
+                        <ul>
+                            <li class="list-head">Company</li>
+                            <li>Blog</li>
+                            <li>Opensource</li>
+                            <li>Careers</li>
+                            <li>Human.txt</li>
+                            <li>Lawyer.txt</li>
+                            <li>Security.txt</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+    
 </body>
 </html>
